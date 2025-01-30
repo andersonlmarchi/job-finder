@@ -1,0 +1,45 @@
+{
+    "name": "job-listing-backend",
+    "version": "1.0.0",
+    "description": "Backend for Job Listing application",
+    "main": "dist/index.js",
+    "engines": {
+        "node": "22.9.0",
+        "npm": "10.9.2"
+    },
+    "scripts": {
+        "start": "node dist/index.js",
+        "dev": "nodemon src/index.ts",
+        "build": "tsc",
+        "lint": "eslint . --ext .ts",
+        "test": "jest"
+    },
+    "keywords": [
+        "job",
+        "listing",
+        "api",
+        "typescript",
+        "express"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "drizzle-orm": "^0.27.2",
+        "express": "^4.18.2",
+        "pg": "^8.13.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.17",
+        "@types/node": "^18.15.11",
+        "@types/pg": "^8.11.11",
+        "@typescript-eslint/eslint-plugin": "^5.57.1",
+        "@typescript-eslint/parser": "^5.57.1",
+        "eslint": "^8.37.0",
+        "nodemon": "^3.1.9",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.3"
+    }
+}
