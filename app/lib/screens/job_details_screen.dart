@@ -37,11 +37,11 @@ class JobDetailsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             const Text(
-              'Job Description:',
+              'Descrição do Emprego:',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            Text(job.description ?? 'No description available.'),
+            Text(job.description ?? 'Descrição indisponível.'),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
@@ -50,7 +50,7 @@ class JobDetailsScreen extends StatelessWidget {
                   const SnackBar(content: Text('Application submitted!')),
                 );
               },
-              child: const Text('Apply for this job'),
+              child: const Text('Aplicar para a vaga'),
             ),
           ],
         ),
